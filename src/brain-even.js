@@ -5,9 +5,7 @@ const MAX_NUMBER = 100;
 const START_MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".';
 const WIN_MESSAGE = 'Correct!';
 
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
+function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -19,7 +17,7 @@ export default () => {
   console.log(START_MESSAGE);
   let wins = 0;
   while (wins < 3) {
-    const num = getRandomIntInclusive(MIN_NUMBER, MAX_NUMBER);
+    const num = getRandomInt(MIN_NUMBER, MAX_NUMBER);
     const expectedAnswer = isEven(num) ? 'yes' : 'no';
     console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
@@ -31,4 +29,4 @@ export default () => {
     wins += 1;
   }
   return true;
-}
+};
