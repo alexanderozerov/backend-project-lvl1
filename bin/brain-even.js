@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import greeter from '../src/cli.js';
+import start, { EVEN } from '../src/index.js';
 
-greeter('even');
+start(EVEN);
