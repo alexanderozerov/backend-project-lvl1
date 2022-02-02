@@ -1,11 +1,8 @@
 import { say, ask } from './cli.js';
-import gameEven from './games/brain-even.js';
+import games from './games/index.js';
 
 export const EVEN = 'even';
-
-const GAMES = {
-  [EVEN]: gameEven,
-};
+export const CALC = 'calc';
 
 const WELCOME_MESSAGE = 'Welcome to the Brain Games!';
 const USERNAME_QUESTION = 'May I have your name?';
@@ -16,7 +13,7 @@ export default (gameName) => {
   say(WELCOME_MESSAGE);
   const userName = ask(USERNAME_QUESTION);
   say(`Hello, ${userName}!`);
-  const game = GAMES[gameName];
+  const game = games[gameName];
   if (!game) {
     return;
   }
