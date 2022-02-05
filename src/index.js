@@ -5,6 +5,7 @@ export const GAMES = {
   EVEN: 'even',
   CALC: 'calc',
   GCD: 'gcd',
+  PROG: 'progression',
 };
 
 const WELCOME_MESSAGE = 'Welcome to the Brain Games!';
