@@ -1,4 +1,5 @@
 import { getRandomInt, getRandomFromList } from '../utils.js';
+import { MIN_NUMBER, MAX_NUMBER } from './constants.js';
 
 const startMessage = 'What is the result of the expression?';
 
@@ -7,9 +8,6 @@ const SIGNS = {
   MINUS: '-',
   MULT: '*',
 };
-
-const MIN_NUMBER = 1;
-const MAX_NUMBER = 100;
 
 const evaluate = (a, b, sign) => {
   switch (sign) {

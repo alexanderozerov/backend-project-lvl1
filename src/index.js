@@ -1,8 +1,11 @@
 import { say, ask } from './cli.js';
 import games from './games/index.js';
 
-export const EVEN = 'even';
-export const CALC = 'calc';
+export const GAMES = {
+  EVEN: 'even',
+  CALC: 'calc',
+  GCD: 'gcd',
+};
 
 const WELCOME_MESSAGE = 'Welcome to the Brain Games!';
 const USERNAME_QUESTION = 'May I have your name?';

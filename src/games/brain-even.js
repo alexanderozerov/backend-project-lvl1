@@ -1,7 +1,5 @@
 import { getRandomInt } from '../utils.js';
-
-const MIN_NUMBER = 1;
-const MAX_NUMBER = 100;
+import { MIN_NUMBER, MAX_NUMBER } from './constants.js';
 
 const startMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
 

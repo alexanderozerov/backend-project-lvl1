@@ -2,4 +2,4 @@
 
 import start, { GAMES } from '../src/index.js';
 
-start(GAMES.CALC);
+start(GAMES.GCD);
