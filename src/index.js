@@ -6,6 +6,7 @@ export const GAMES = {
   CALC: 'calc',
   GCD: 'gcd',
   PROG: 'progression',
+  PRIME: 'prime',
 };
 
 const WELCOME_MESSAGE = 'Welcome to the Brain Games!';
