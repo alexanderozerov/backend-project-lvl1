@@ -7,7 +7,7 @@ const getQuestion = () => {
   const n = getRandomInt(MIN_NUMBER, MAX_NUMBER);
   const d = getRandomInt(MIN_NUMBER, MAX_NUMBER);
   const progression = Array(10).fill(n, 0, 10).map((v, i) => v + (i + 1) * d);
-  const i = getRandomInt(0, 10);
+  const i = getRandomInt(0, 9);
   const x = progression[i];
   progression[i] = '..';
   const question = `Question: ${progression.join(' ')}`;
