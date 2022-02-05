@@ -17,7 +17,7 @@ const isPrime = (n) => {
 const getQuestion = () => {
   const n = getRandomInt(MIN_NUMBER, MAX_NUMBER);
 
-  const question = `${n}`;
+  const question = `Question: ${n}`;
   const answer = isPrime(n) ? 'yes' : 'no';
   return { question, answer };
 };

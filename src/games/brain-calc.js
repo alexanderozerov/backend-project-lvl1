@@ -26,7 +26,7 @@ const getQuestion = () => {
   const a = getRandomInt(MIN_NUMBER, MAX_NUMBER);
   const b = getRandomInt(MIN_NUMBER, MAX_NUMBER);
   const sign = getRandomFromList(Object.values(SIGNS));
-  const question = `${a} ${sign} ${b}`;
+  const question = `Question: ${a} ${sign} ${b}`;
   const answer = `${evaluate(a, b, sign)}`;
   return { question, answer };
 };

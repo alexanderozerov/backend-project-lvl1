@@ -13,7 +13,7 @@ const gcd = (a, b) => {
 const getQuestion = () => {
   const a = getRandomInt(MIN_NUMBER, MAX_NUMBER);
   const b = getRandomInt(MIN_NUMBER, MAX_NUMBER);
-  const question = `${a} ${b}`;
+  const question = `Question: ${a} ${b}`;
   const answer = `${gcd(Math.max(a, b), Math.min(a, b))}`;
   return { question, answer };
 };

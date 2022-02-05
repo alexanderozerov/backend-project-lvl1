@@ -10,7 +10,7 @@ const getQuestion = () => {
   const i = getRandomInt(0, 10);
   const x = progression[i];
   progression[i] = '..';
-  const question = `${progression.join(' ')}`;
+  const question = `Question: ${progression.join(' ')}`;
   const answer = `${x}`;
   return { question, answer };
 };
